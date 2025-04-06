@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: url('https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">DevPortfolio</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="projects.html" class="hover:underline">Projects</a></li>
+                <li><a href="skills.html" class="hover:underline">Skills</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-md bg-black bg-opacity-50 p-8 rounded-lg">
+                <h1 class="text-4xl font-bold mb-4">Hi, I'm [Your Name]</h1>
+                <p class="text-xl mb-6">Full Stack Developer | Web Designer | Problem Solver</p>
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg inline-block transition duration-300">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p>&copy; 2023 Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
