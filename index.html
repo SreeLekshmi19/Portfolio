@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .hero-bg {
-            background-image: url('https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<body class="font-sans">
+
+<body class="font-sans bg-gray-100 text-gray-900">
     <!-- Navigation -->
     <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">DevPortfolio</a>
+            <a href="index.html" class="text-2xl font-bold">Portfolio</a>
             <ul class="hidden md:flex space-x-6">
-                <li><a href="index.html" class="hover:underline">Home</a></li>
-                <li><a href="about.html" class="hover:underline">About</a></li>
-                <li><a href="projects.html" class="hover:underline">Projects</a></li>
-                <li><a href="skills.html" class="hover:underline">Skills</a></li>
-                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                <li><a href="skills.html" class="hover:text-blue-400">Skills</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
             </ul>
-            <button class="md:hidden">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
+            <div class="md:hidden">
+                <button id="menu-toggle" aria-label="Open menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
         </div>
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-4 mt-2 bg-gray-800">
+            <li><a href="index.html" class="block py-2 hover:text-blue-400">Home</a></li>
+            <li><a href="about.html" class="block py-2 hover:text-blue-400">About</a></li>
+            <li><a href="projects.html" class="block py-2 hover:text-blue-400">Projects</a></li>
+            <li><a href="skills.html" class="block py-2 hover:text-blue-400">Skills</a></li>
+            <li><a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg h-screen flex items-center text-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-md bg-black bg-opacity-50 p-8 rounded-lg">
-                <h1 class="text-4xl font-bold mb-4">Hi, I'm [Your Name]</h1>
-                <p class="text-xl mb-6">Full Stack Developer | Web Designer | Problem Solver</p>
-                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg inline-block transition duration-300">View My Work</a>
-            </div>
+    <section class="min-h-screen flex items-center justify-center text-white bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg');">
+        <div class="bg-black bg-opacity-60 p-10 rounded-xl max-w-2xl text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Sree Lakshmi</h1>
+            <p class="text-xl mb-4 font-medium">Full Stack Developer | UI/UX Designer</p>
+            <p class="text-lg leading-relaxed">
+                I'm a passionate Full Stack Developer and UI/UX designer focused on creating user-friendly, visually
+                appealing digital experiences. I bring ideas to life through functional and intuitive design. Let's
+                collaborate and build something amazing!
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-2 text-xs">
         <div class="container mx-auto text-center">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-2x"></i></a>
+            <div class="flex justify-center space-x-4 mb-1">
+                <a href="https://github.com/SreeLekshmi19" class="hover:text-blue-400" aria-label="GitHub"><i class="fab fa-github text-base"></i></a>
+                <a href="https://www.linkedin.com/in/sini-sree-lakshmi/" class="hover:text-blue-400" aria-label="LinkedIn"><i class="fab fa-linkedin text-base"></i></a>
+                <a href="sinisreelakshmi05@gmail.com" class="hover:text-blue-400" aria-label="E-Mail"><i class="fa-solid fa-envelope text-base"></i></a>
             </div>
-            <p>&copy; 2023 Developer Portfolio. All rights reserved.</p>
+            <p>&copy; By Sree Lakshmi.</p>
         </div>
     </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
+
 </html>
