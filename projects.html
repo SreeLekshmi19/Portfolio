@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">DevPortfolio</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="projects.html" class="hover:underline font-semibold">Projects</a></li>
+                <li><a href="skills.html" class="hover:underline">Skills</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-16" id="projects">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg" alt="Project 1"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Weather App</h3>
+                        <p class="text-gray-600 mb-4">A real-time weather and air quality index monitoring web application featuring a simple, user-friendly interface.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="Project 2"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">Collaborative tool for team task organization with real-time
+                            updates.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Project 3"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Weather Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Real-time weather forecasting application with location detection.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">API Integration</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p>&copy; 2023 Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
