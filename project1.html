@@ -36,6 +36,130 @@
             <li><a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Project Details Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <a href="projects.html" class="inline-flex items-center text-blue-600 hover:underline mb-6">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+            </a>
+
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <!-- Project Header -->
+                <div class="p-8 border-b">
+                    <h1 class="text-3xl font-bold mb-2">Weather App</h1>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">API
+                            Integration</span>
+                    </div>
+                    <p class="text-gray-600">Air Cast is a real-time weather and air quality monitoring web application
+                        that leverages geolocation and third-party APIs to deliver accurate, location-based
+                        environmental data. Featuring a clean, responsive interface, the application emphasizes
+                        usability, performance, and cross-platform accessibility.</p>
+                </div>
+
+                <!-- Project Gallery -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-8">
+                    <img src=".\assets\screencapture-air-cast-netlify-app-2025-04-13-16_00_02.png"
+                        alt="Project Screenshot 2" class="rounded-lg shadow-md">
+                </div>
+
+                <!-- Project Details -->
+                <div class="p-8 border-t">
+                    <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Features</h3>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Search weather by city name</li>
+                                <li>Get weather based on your current location</li>
+                                <li>View current temperature, humidity, and Air Quality Index</li>
+                                <li>Provides an overall description</li>
+                                <li>Clean and responsive UI</li>
+                                <li>Light & Dark mode support</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Technical Details</h3>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Frontend: HTML, CSS, Bootstrap</li>
+                                <li>Backend: JavaScript</li>
+                                <li>Location Services: Geolocation API</li>
+                                <li>API: WeatherAPI (via RapidAPI)</li>
+                                <li>Deployment: Netlify</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-3">Challenges & Solutions</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium">Handling Location Permissions</h4>
+                                <p class="text-gray-600">Implemented fallback search functionality when users deny
+                                    location access, ensuring app usability.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">API Error Handling</h4>
+                                <p class="text-gray-600">Used try-catch blocks and user-friendly error messages to
+                                    handle cases like invalid city names or failed API calls.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Responsive Design</h4>
+                                <p class="text-gray-600">Bootstrap for a flexible, responsive UI
+                                    that adapts to different screen sizes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-3">Lessons Learned</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Learned how to integrate and manage third-party APIs effectively</li>
+                            <li>Gained experience with browser geolocation and handling permissions</li>
+                            <li>Improved frontend development skills by blending Bootstrap with Tailwind</li>
+                            <li>Strengthened debugging and error handling practices in real-world scenarios</li>
+                        </ul>
+                    </div>                    
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-3">Project Links</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/SreeLekshmi19/Weather-App.git"
+                                class="flex items-center text-blue-600 hover:underline">
+                                <i class="fab fa-github mr-2"></i> Source Code
+                            </a>
+                            <a href="https://air-cast.netlify.app/"
+                                class="flex items-center text-blue-600 hover:underline">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-2 text-xs">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4 mb-1">
+                <a href="https://github.com/SreeLekshmi19" class="hover:text-blue-400" aria-label="GitHub"><i
+                        class="fab fa-github text-base"></i></a>
+                <a href="https://www.linkedin.com/in/sini-sree-lakshmi/" class="hover:text-blue-400"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin text-base"></i></a>
+                <a href="sinisreelakshmi05@gmail.com" class="hover:text-blue-400" aria-label="E-Mail"><i
+                        class="fa-solid fa-envelope text-base"></i></a>
+            </div>
+            <p>&copy; By Sree Lakshmi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
