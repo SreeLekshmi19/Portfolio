@@ -1,4 +1,4 @@
-# Sree Lakshmi's Portfolio 🌐
+# Portfolio 🌐
 
 Welcome to my personal portfolio website! This portfolio is a showcase of my skills, projects, and professional background as a web and mobile developer. It includes detailed project pages, an overview of my skills, and ways to get in touch. ✨
 
