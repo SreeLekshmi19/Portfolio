@@ -53,15 +53,11 @@
                         <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-sm">Android
                             Java</span>
                     </div>
-                    <p class="text-gray-600">Air Cast is a real-time weather and air quality monitoring web application
-                        that leverages geolocation and third-party APIs to deliver accurate, location-based
-                        environmental data. Featuring a clean, responsive interface, the application emphasizes
-                        usability, performance, and cross-platform accessibility.</p>
-                </div>
-
-                <!-- Project Gallery -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-8">
-                    <img src="/assets/screenshot.png" alt="Project Screenshot 2" class="rounded-lg shadow-md">
+                    <p class="text-gray-600">A minimalistic and responsive Android application designed for efficient
+                        note-taking and personal organization. Built with a focus on simplicity, performance, and
+                        usability, the app offers a clean interface and smooth user experience. It enables users to
+                        create, view, and manage notes with ease, making it ideal for everyday productivity on mobile
+                        devices.</p>
                 </div>
 
                 <!-- Project Details -->
@@ -71,22 +67,24 @@
                         <div>
                             <h3 class="text-xl font-semibold mb-3">Features</h3>
                             <ul class="list-disc pl-5 space-y-2">
-                                <li>Search weather by city name</li>
-                                <li>Get weather based on your current location</li>
-                                <li>View current temperature, humidity, and Air Quality Index</li>
-                                <li>Provides an overall description</li>
-                                <li>Clean and responsive UI</li>
-                                <li>Light & Dark mode support</li>
+                                <li>Create and save new notes</li>
+                                <li>Edit and update existing notes</li>
+                                <li>Delete notes with a swipe or tap</li>
+                                <li>Search through notes easily</li>
+                                <li>Simple, responsive UI</li>
+                                <li>Offline usage</li>
                             </ul>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold mb-3">Technical Details</h3>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Frontend: HTML, CSS, Bootstrap</li>
-                                <li>Backend: JavaScript</li>
-                                <li>Location Services: Geolocation API</li>
-                                <li>API: WeatherAPI (via RapidAPI)</li>
-                                <li>Deployment: Netlify</li>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li><strong>Language:</strong> Java</li>
+                                <li><strong>IDE:</strong> Android Studio</li>
+                                <li><strong>User Interface:</strong> XML (with ConstraintLayout, LinearLayout)</li>
+                                <li><strong>Storage:</strong> SharedPreferences / Internal Storage</li>
+                                <li><strong>UI Components:</strong> RecyclerView, EditText, CardView</li>
+                                <li><strong>Build Tool:</strong> Gradle</li>
+                                <li><strong>Version Control:</strong> Git & GitHub</li>
                             </ul>
                         </div>
                     </div>
@@ -95,19 +93,20 @@
                         <h3 class="text-xl font-semibold mb-3">Challenges & Solutions</h3>
                         <div class="space-y-4">
                             <div>
-                                <h4 class="font-medium">Handling Location Permissions</h4>
-                                <p class="text-gray-600">Implemented fallback search functionality when users deny
-                                    location access, ensuring app usability.</p>
+                                <h4 class="font-medium">Data Persistence</h4>
+                                <p class="text-gray-600">Storing notes using SharedPreferences and ensuring data is
+                                    retained on app restart was a challenge, resolved through structured key-value
+                                    storage.</p>
                             </div>
                             <div>
-                                <h4 class="font-medium">API Error Handling</h4>
-                                <p class="text-gray-600">Used try-catch blocks and user-friendly error messages to
-                                    handle cases like invalid city names or failed API calls.</p>
+                                <h4 class="font-medium">Efficient Note Deletion</h4>
+                                <p class="text-gray-600">Implemented swipe-to-delete using RecyclerView’s
+                                    ItemTouchHelper for better UX and smooth interaction.</p>
                             </div>
                             <div>
-                                <h4 class="font-medium">Responsive Design</h4>
-                                <p class="text-gray-600">Combined Tailwind and Bootstrap for a flexible, responsive UI
-                                    that adapts to different screen sizes.</p>
+                                <h4 class="font-medium">UI Responsiveness</h4>
+                                <p class="text-gray-600">Tested across different screen sizes and made layout
+                                    adjustments using ConstraintLayout to ensure usability.</p>
                             </div>
                         </div>
                     </div>
@@ -115,23 +114,21 @@
                     <div class="mt-8">
                         <h3 class="text-xl font-semibold mb-3">Lessons Learned</h3>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            <li>Learned how to integrate and manage third-party APIs effectively</li>
-                            <li>Gained experience with browser geolocation and handling permissions</li>
-                            <li>Improved frontend development skills by blending Bootstrap with Tailwind</li>
-                            <li>Strengthened debugging and error handling practices in real-world scenarios</li>
+                            <li>Gained practical experience with Android Studio and Java for app development</li>
+                            <li>Learned how to design intuitive UIs using XML and ConstraintLayout</li>
+                            <li>Understood the use of SharedPreferences for lightweight local data storage</li>
+                            <li>Improved app lifecycle management and handling configuration changes</li>
+                            <li>Practiced implementing RecyclerView and managing dynamic content efficiently</li>
+                            <li>Enhanced debugging and testing skills within the Android ecosystem</li>
                         </ul>
-                    </div>
+                    </div>                    
 
                     <div class="mt-8">
                         <h3 class="text-xl font-semibold mb-3">Project Links</h3>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/SreeLekshmi19/Weather-App.git"
+                            <a href="https://github.com/SreeLekshmi19/Notes-app.git"
                                 class="flex items-center text-blue-600 hover:underline">
                                 <i class="fab fa-github mr-2"></i> Source Code
-                            </a>
-                            <a href="https://air-cast.netlify.app/"
-                                class="flex items-center text-blue-600 hover:underline">
-                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
                             </a>
                         </div>
                     </div>
