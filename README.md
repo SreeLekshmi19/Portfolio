@@ -40,6 +40,6 @@ To run this project locally:
 
 1. Clone the repo  
    ```bash
-   git clone https://github.com/SreeLekshmi19/sree-lakshmi-portfolio.git
+   git clone https://github.com/SreeLekshmi19/Portfolio.git
 2. Open the project in your code editor
 3. Open index.html in your browser or use a live server extension
