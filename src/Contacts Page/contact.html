@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-icon {
+            @apply text-gray-700 hover:text-blue-500 transition-colors duration-300;
+        }
+        #contactForm button:hover {
+            @apply transform scale-105 transition-transform duration-300;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">DevPortfolio</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="projects.html" class="hover:underline">Projects</a></li>
+                <li><a href="skills.html" class="hover:underline">Skills</a></li>
+                <li><a href="contact.html" class="hover:underline font-semibold">Contact</a></li>
+            </ul>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <form id="contactForm">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" required 
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" required 
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" required 
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" required 
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <button type="submit" 
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                                    <span>contact@devportfolio.com</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-phone text-blue-500 mr-3"></i>
+                                    <span>+1 (555) 123-4567</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>
+                                    <span>San Francisco, CA</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-stack-overflow fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4">Availability</h3>
+                            <p class="text-gray-600 mb-2">Monday - Friday: 9am - 5pm PST</p>
+                            <p class="text-gray-600">Response time: Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p>&copy; 2023 Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
