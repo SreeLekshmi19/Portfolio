@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Developer Portfolio</title>
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -19,18 +19,28 @@
     <!-- Navigation -->
     <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">DevPortfolio</a>
+            <a href="index.html" class="text-2xl font-bold">Portfolio</a>
             <ul class="hidden md:flex space-x-6">
-                <li><a href="index.html" class="hover:underline">Home</a></li>
-                <li><a href="about.html" class="hover:underline">About</a></li>
-                <li><a href="projects.html" class="hover:underline">Projects</a></li>
-                <li><a href="skills.html" class="hover:underline">Skills</a></li>
-                <li><a href="contact.html" class="hover:underline font-semibold">Contact</a></li>
+                <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                <li><a href="/src/About Page/about.html" class="hover:text-blue-400">About</a></li>
+                <li><a href="/src/Projects Page/projects.html" class="hover:text-blue-400">Projects</a></li>
+                <li><a href="/src/Skills Page/skills.html" class="hover:text-blue-400">Skills</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400 font-semibold">Contact</a></li>
             </ul>
-            <button class="md:hidden">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
+            <div class="md:hidden">
+                <button id="menu-toggle" aria-label="Open menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
         </div>
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-4 mt-2 bg-gray-800">
+            <li><a href="index.html" class="block py-2 hover:text-blue-400">Home</a></li>
+            <li><a href="/src/About Page/about.html" class="block py-2 hover:text-blue-400">About</a></li>
+            <li><a href="/src/Projects Page/projects.html" class="block py-2 hover:text-blue-400">Projects</a></li>
+            <li><a href="/src/Skills Page/skills.html" class="block py-2 hover:text-blue-400">Skills</a></li>
+            <li><a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Contact Section -->
@@ -77,15 +87,11 @@
                             <ul class="space-y-3">
                                 <li class="flex items-center">
                                     <i class="fas fa-envelope text-blue-500 mr-3"></i>
-                                    <span>contact@devportfolio.com</span>
+                                    <span>sinisreelakshmi05@gmail.com</span>
                                 </li>
                                 <li class="flex items-center">
                                     <i class="fas fa-phone text-blue-500 mr-3"></i>
-                                    <span>+1 (555) 123-4567</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>
-                                    <span>San Francisco, CA</span>
+                                    <span>+91 9030472726</span>
                                 </li>
                             </ul>
                         </div>
@@ -120,16 +126,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-2 text-xs">
         <div class="container mx-auto text-center">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-2x"></i></a>
+            <div class="flex justify-center space-x-4 mb-1">
+                <a href="https://github.com/SreeLekshmi19" class="hover:text-blue-400" aria-label="GitHub"><i
+                        class="fab fa-github text-base"></i></a>
+                <a href="https://www.linkedin.com/in/sini-sree-lakshmi/" class="hover:text-blue-400"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin text-base"></i></a>
+                <a href="mailto:sinisreelakshmi05@gmail.com" class="hover:text-blue-400" aria-label="E-Mail"><i
+                        class="fa-solid fa-envelope text-base"></i></a>
             </div>
-            <p>&copy; 2023 Developer Portfolio. All rights reserved.</p>
+            <p>&copy; By Sree Lakshmi.</p>
         </div>
     </footer>
+
+    <script src="/src/script.js"></script>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
