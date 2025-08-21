@@ -1,4 +1,4 @@
-# 💼 Sree Lakshmi's Portfolio
+# 💼 Portfolio
 
 Welcome to the source code of my portfolio! This portfolio is a showcase of my skills, projects, and professional background as a web and mobile developer. It includes detailed project pages, an overview of my skills, and ways to get in touch.
 
